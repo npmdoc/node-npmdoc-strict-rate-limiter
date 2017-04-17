@@ -1,1 +1,39 @@
-{     "devDependencies": {         "strict-rate-limiter": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-strict-rate-limiter",     "homepage": "https://github.com/npmdoc/node-npmdoc-strict-rate-limiter",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-strict-rate-limiter.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [strict-rate-limiter (v0.2.0)](https://github.com/getc/strict-rate-limiter) [![npm package](https://img.shields.io/npm/v/npmdoc-strict-rate-limiter.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-strict-rate-limiter) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-strict-rate-limiter.svg)](https://travis-ci.org/npmdoc/node-npmdoc-strict-rate-limiter)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "strict-rate-limiter": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-strict-rate-limiter",
+    "keywords": [
+        "documentation",
+        "strict-rate-limiter"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_strict_rate_limiter.js",
+    "name": "npmdoc-strict-rate-limiter",
+    "nameAlias": "npmdoc_strict_rate_limiter",
+    "nameOriginal": "npmdoc-strict-rate-limiter",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-strict-rate-limiter.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
