@@ -1,4 +1,7 @@
-# api documentation for  [strict-rate-limiter (v0.2.0)](https://github.com/getc/strict-rate-limiter)  [![npm package](https://img.shields.io/npm/v/npmdoc-strict-rate-limiter.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-strict-rate-limiter) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-strict-rate-limiter.svg)](https://travis-ci.org/npmdoc/node-npmdoc-strict-rate-limiter)
+# npmdoc-strict-rate-limiter
+
+#### basic api documentation for  [strict-rate-limiter (v0.2.0)](https://github.com/getc/strict-rate-limiter)  [![npm package](https://img.shields.io/npm/v/npmdoc-strict-rate-limiter.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-strict-rate-limiter) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-strict-rate-limiter.svg)](https://travis-ci.org/npmdoc/node-npmdoc-strict-rate-limiter)
+
 #### Rate limiter backed by redis with strict concurrency rules for scalable applications
 
 [![NPM](https://nodei.co/npm/strict-rate-limiter.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/strict-rate-limiter)
@@ -56,7 +59,8 @@
     "scripts": {
         "test": "jshint && jasmine-node spec --verbose --captureExceptions --forceexit"
     },
-    "version": "0.2.0"
+    "version": "0.2.0",
+    "bin": {}
 }
 ```
 
